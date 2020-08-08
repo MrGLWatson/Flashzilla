@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4E8E01D24DEA153001A26EF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E8E01C24DEA153001A26EF /* Card.swift */; };
+		D4E8E01F24DEA2F2001A26EF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E8E01E24DEA2F2001A26EF /* CardView.swift */; };
 		D4F474CE24DBEFEC0005B533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F474CD24DBEFEC0005B533 /* AppDelegate.swift */; };
 		D4F474D024DBEFEC0005B533 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F474CF24DBEFEC0005B533 /* SceneDelegate.swift */; };
 		D4F474D224DBEFEC0005B533 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F474D124DBEFEC0005B533 /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4E8E01C24DEA153001A26EF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		D4E8E01E24DEA2F2001A26EF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		D4F474CA24DBEFEC0005B533 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F474CD24DBEFEC0005B533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F474CF24DBEFEC0005B533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +60,11 @@
 		D4F474CC24DBEFEC0005B533 /* Flashzilla */ = {
 			isa = PBXGroup;
 			children = (
+				D4E8E01E24DEA2F2001A26EF /* CardView.swift */,
 				D4F474CD24DBEFEC0005B533 /* AppDelegate.swift */,
 				D4F474CF24DBEFEC0005B533 /* SceneDelegate.swift */,
 				D4F474D124DBEFEC0005B533 /* ContentView.swift */,
+				D4E8E01C24DEA153001A26EF /* Card.swift */,
 				D4F474D324DBEFED0005B533 /* Assets.xcassets */,
 				D4F474D824DBEFED0005B533 /* LaunchScreen.storyboard */,
 				D4F474DB24DBEFED0005B533 /* Info.plist */,
@@ -149,6 +155,8 @@
 				D4F474CE24DBEFEC0005B533 /* AppDelegate.swift in Sources */,
 				D4F474D024DBEFEC0005B533 /* SceneDelegate.swift in Sources */,
 				D4F474D224DBEFEC0005B533 /* ContentView.swift in Sources */,
+				D4E8E01D24DEA153001A26EF /* Card.swift in Sources */,
+				D4E8E01F24DEA2F2001A26EF /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
