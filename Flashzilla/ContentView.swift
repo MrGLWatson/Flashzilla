@@ -22,7 +22,7 @@ struct ContentView: View {
     @State private var cards = [Card]()
     
     @State private var isActive = true
-    @State private var timeRemaining = 100
+    @State private var timeRemaining = 10
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -65,6 +65,14 @@ struct ContentView: View {
                         .background(Color.white)
                         .foregroundColor(.black)
                         .clipShape(Capsule())
+                } else {
+                    if self.timeRemaining <= 0 {
+                          Button("Out of Time ", action: resetCards)
+                            .padding()
+                            .background(Color.white)
+                            .foregroundColor(.black)
+                            .clipShape(Capsule())
+                    }
                 }
             }
             
@@ -75,9 +83,9 @@ struct ContentView: View {
                         self.showingEditScreen = true
                     }) {
                         Image(systemName: "plus.circle")
-                        .padding()
+                            .padding()
                             .background(Color.black.opacity(0.7))
-                        .clipShape(Circle())
+                            .clipShape(Circle())
                     }
                 }
                 Spacer()
@@ -151,7 +159,7 @@ struct ContentView: View {
     }
     
     func resetCards() {
-        timeRemaining = 100
+        timeRemaining = 10
         isActive = true
         loadData()
     }
