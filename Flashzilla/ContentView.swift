@@ -22,7 +22,7 @@ struct ContentView: View {
     @State private var cards = [Card]()
     
     @State private var isActive = true
-    @State private var timeRemaining = 10
+    @State private var timeRemaining = 100
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -34,6 +34,7 @@ struct ContentView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
+                .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
             
             VStack {
                 Text("Time: \(timeRemaining)")
@@ -159,7 +160,7 @@ struct ContentView: View {
     }
     
     func resetCards() {
-        timeRemaining = 10
+        timeRemaining = 100
         isActive = true
         loadData()
     }
